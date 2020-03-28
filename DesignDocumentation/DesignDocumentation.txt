@@ -1,0 +1,74 @@
+
+************************************************************************************
+This is just a basic structure of how to project should look in regards of APIS
+
+
+************************************************************************************
+
+
+1. UI :
+
+
+	ShowLocationAnalysis()
+
+				
+					                Return value:
+							                          json object{Sector(or cordinates):  ,Day: ,Hour: ,Weather: ,Holiday:  , Percentage:  }	
+
+
+	PutInformationOfCurrentLocation()
+
+					                          parameters:
+							                                  json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+
+
+
+2. DB Handler :
+
+		            PutData():
+				                    Pramaters: 
+						                            Sector,  json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+
+
+
+		           GetData():
+			                  	Paramaters: 
+					                          	Sector  , json object (Day: ,  Hour:,  Weather, Holiday: }
+
+			                  	Return value:
+						                            List of  json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+
+		          DeleteData():
+
+			                    	Paramaters:
+						                            Sector, json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+			
+
+
+
+3.  DataAnalyzer:
+		            	GetInformation:
+					                        Paramaters :
+							                                  Sector ,  json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+
+							                                  note : will request information from DB Handler and will compute the infromation, providing a percentage to receive a ticket(maybe with Seaborn python moudle)
+
+
+			            PutInformation:
+
+					                        Paramters:
+							                                Sector ,  json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+							
+
+
+4. DB:
+
+
+		    Put:
+
+
+
+
+
+
+		    Get:
