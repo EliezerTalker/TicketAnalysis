@@ -33,9 +33,9 @@ This is just a basic structure of how the project should look in regards of APIS
 			   Return value:
 				         List of  json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
 
-		          DeleteData():
-			                Paramaters:
-						    Sector, json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+		DeleteData():
+			       Paramaters:
+				           Sector, json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
 			
 
 
