@@ -1,8 +1,6 @@
 
 ************************************************************************************
-This is just a basic structure of how to project should look in regards of APIS
-
-
+This is just a basic structure of how the project should look in regards of APIS.
 ************************************************************************************
 
 
