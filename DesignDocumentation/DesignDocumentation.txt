@@ -3,20 +3,44 @@
 This is just a basic structure of how the project should look in regards of APIS.
 ************************************************************************************
 
+The technologies we will use: python, seaborn python/matplotlib python, MongoDB, Flask, BootStrap
 
 1. UI :
 
 
+        Register():
+	           Input Paramaters:
+			             json object{User name: , Password: }
+
+       	Login():
+	
+		   Input Paramaters: 
+				   json object{User name: , Password: }
+
 	ShowLocationAnalysis():
-			        Return value:
-					      json object{Sector(or cordinates):  ,Day: ,Hour: ,Weather: ,Holiday:  , Percentage:  }	
+	                        
+			       Note : the user will also be able to choose  the date, the hour, and the cordinate he wishes
+			       
+                               Input Parameters:
+					        json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+			       Return Value:
+					        json object{Sector(or cordinates):  ,Day: ,Hour: ,Weather: ,Holiday:  , Percentage:  }	
 
 
 	PutInformationOfCurrentLocation():
-					    parameters:
-							json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+					    Input Parameters:
+							     json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+							
+				            Retrun Value :
+					                   Error Code ( OK  Failed)
 
-
+       RunsimulationAnalysis():
+       
+       				 Input Paramters:
+				 		   List of jason object { Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+		
+		                 Return Value :
+				                 Graph of ticket percentage for this area
 
 2. DB Handler :
 
@@ -57,3 +81,5 @@ This is just a basic structure of how the project should look in regards of APIS
         Put:
    
         Get:
+	
+	Delete:
