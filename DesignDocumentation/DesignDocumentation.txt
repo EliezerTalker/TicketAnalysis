@@ -22,7 +22,8 @@ The technologies we will use: python, seaborn python/matplotlib python, MongoDB,
 			       Note : the user will also be able to choose  the date, the hour, and the cordinate he wishes
 			       
                                Input Parameters:
-					        json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: }
+			                         Note : given parameter will be only cordinate and durationOfParking(backend will                														caculate it)
+					        json object{Cordinates:  ,Day: ,Hour: ,Weather: ,Holiday: , howLongParked: }
 			       Return Value:
 					        json object{Sector(or cordinates):  ,Day: ,Hour: ,Weather: ,Holiday:  , Percentage:  }	
 
@@ -33,7 +34,7 @@ The technologies we will use: python, seaborn python/matplotlib python, MongoDB,
 							
 				            Retrun Value :
 					                   Error Code ( OK  Failed)
-
+       (not for normal user but only for admins)
        RunsimulationAnalysis():
        
        				 Input Paramters:
